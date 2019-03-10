@@ -2,10 +2,10 @@ package carcraft;
 
 public class PaintColor extends CarOptions() {
 	
-	protected CarOptions car;
+	protected ICar car;
 	public String color;
 	
-	public PaintColor(CarOptions car, String color)
+	public PaintColor(ICar car, String color)
 	{
 		System.out.println("Paint Color constructor");
 		this.car = car;
