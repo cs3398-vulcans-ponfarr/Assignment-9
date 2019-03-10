@@ -4,7 +4,7 @@ public class PaintColor extends CarOptions() {
 	
 	public String color;
 	
-	public AirScoop(String color)
+	public PaintColor(String color)
 	{
 		System.out.println("Paint Color constructor");
 		this.color = color;
