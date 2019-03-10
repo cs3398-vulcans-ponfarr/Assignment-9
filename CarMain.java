@@ -24,11 +24,12 @@ public class CarMain {
 		// start a while loop
 		while (choice != 0) {
 			System.out.println("Which decorator would you like to add?");
-			System.out.print('\t' + "1: Airscoop" + '\n');
-			System.out.print('\t' + "2: Color" + '\n');
-			System.out.print('\t' + "3: SportWheels" + '\n');
-			System.out.print('\t' + "4: SuperCharger" + '\n');
-			System.out.print('\t' + "5: CarOptions" + '\n');
+			System.out.print('\t' + "1: Color and Airscoop" + '\n');
+			System.out.print('\t' + "2: Color and SportWheels" + '\n');
+			System.out.print('\t' + "3: Color and SuperCharger" + '\n');
+			System.out.print('\t' + "4: Color, SuperCharger, AirScoop" + '\n');
+			System.out.print('\t' + "5: Color, SuperCharger, AirScoop, and SportWheels" + '\n');
+			System.out.print('\t' + "6: Color Only" + '\n');
 			System.out.print('\t' + "0: Exit" + '\n');
 			
 			Scanner in = new Scanner(System.in);
@@ -40,23 +41,27 @@ public class CarMain {
 			else {
 				switch (choice) {
 					case 1:
-						ICar carWithOptions = new AirScoop();
+						ICar carWithOptions = new Color(new AirScoop("Forward ");
 						System.out.println("Done. " + carWithOptions.GetDescription());
 						break;
 					case 2:
-						ICar carWithOptions = new Color();
+						ICar carWithOptions = new Color(new SportWheels("Shiny ");
 						System.out.println("Done. " + carWithOptions.GetDescription());
 						break;
 					case 3:
-						ICar carWithOptions = new SportWheels();
+						ICar carWithOptions = new Color(new SuperCharger("Overcharged "));
 						System.out.println("Done. " + carWithOptions.GetDescription());
 						break;
 					case 4:
-						ICar carWithOptions = new SuperCharger();
+						ICar carWithOptions = new Color(new SuperCharger(new AirScoop("Sweet Options")));
 						System.out.println("Done. " + carWithOptions.GetDescription());
 						break;
 					case 5:
-						ICar carWithOptions = new CarOptions();
+						ICar carWithOptions = new Color(new SuperCharger(new AirScoop(new SportWheels("Most Sick Options"))));
+						System.out.println("Done. " + carWithOptions.GetDescription());
+						break;
+					case 6:
+						ICar carWithOptions = new Color("Basic Option");
 						System.out.println("Done. " + carWithOptions.GetDescription());
 						break;
 					default:
