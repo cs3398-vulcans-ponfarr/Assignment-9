@@ -7,7 +7,7 @@ public class PaintColor extends CarOptions() {
 	
 	public PaintColor(CarOptions car, String color)
 	{
-		System.out.println("Paint Color constructor");
+		//System.out.println("Paint Color constructor");
 		this.car = car;
 		this.color = color;
 	}
