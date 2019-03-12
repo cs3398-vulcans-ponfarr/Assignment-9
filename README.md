@@ -8,4 +8,4 @@ Responsibilities:
     Jacob Gotcher -> CarOptions.
 
 Submissions:
-  Jon-Paul Kasper - CarMain.java, AirScoop.java
+  Jon-Paul Kasper - AirScoop.java
