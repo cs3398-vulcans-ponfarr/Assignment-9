@@ -3,19 +3,19 @@ package carcraft;
 
 public class AirScoop extends CarOptions() {
 	
-	public String AirScoop;
+	public String scoop;
 	
-	public AirScoop()
+	public AirScoop(String a_scoop)
 	{
 		System.out.println("AirScoop Constructor");
 		
-		AirScoop = "Front Facing Scoop";
+		this.scoop = a_scoop;
 	}
 	
 	@Override
-	public String GetDescription()
+	public String getDescription()
 	{
-		return super.GetDescription() + "with" + AirScoop + "scoop";
+		return " with " + this.scoop + " scoop ";
 	}
 	
 }
