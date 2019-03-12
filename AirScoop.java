@@ -4,11 +4,13 @@ package carcraft;
 public class AirScoop extends CarOptions() {
 	
 	public String scoop;
+	public CarOptions car;
 	
-	public AirScoop(String a_scoop)
+	public AirScoop(CarOptions car, String a_scoop)
 	{
-		System.out.println("AirScoop Constructor");
+		//System.out.println("AirScoop Constructor");
 		
+		this.car = car;
 		this.scoop = a_scoop;
 	}
 	
