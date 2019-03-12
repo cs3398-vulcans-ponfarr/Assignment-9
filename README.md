@@ -8,7 +8,7 @@ Responsibilities:
     Jacob Gotcher -> SportWheels
 
 Submissions:
-  Jon-Paul Kasper - AirScoop.java
-  Peter Cowsar - PaintColor, CarOptions
-  Jacob Gotcher - SportWheels
+  Jon-Paul Kasper - AirScoop.java  
+  Peter Cowsar - PaintColor, CarOptions  
+  Jacob Gotcher - SportWheels  
   Cameron Valdez - Supercharger
