@@ -15,7 +15,7 @@ public class PaintColor extends CarOptions {
 	@Override
 	public String getDescription()
 	{
-		return super.getDescription() + " painted " + this.color;
+		return car.getDescription() + " painted " + this.color;
 	}
 	
 }
