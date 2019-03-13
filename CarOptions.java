@@ -4,7 +4,7 @@ public class CarOptions implements ICar {
 	
 	public CarOptions()
 	{
-		System.out.println("CarOptions constructor");
+		//System.out.println("CarOptions constructor");
 	}
 	
 	@Override
