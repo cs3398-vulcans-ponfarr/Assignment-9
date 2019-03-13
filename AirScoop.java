@@ -1,7 +1,7 @@
 
 package carcraft;
 
-public class AirScoop extends CarOptions() {
+public class AirScoop extends CarOptions {
 	
 	public String scoop;
 	public CarOptions car;
@@ -17,7 +17,7 @@ public class AirScoop extends CarOptions() {
 	@Override
 	public String getDescription()
 	{
-		return " with " + this.scoop + " scoop ";
+		return car.getDescription() + " with " + this.scoop + " scoop ";
 	}
 	
 }
