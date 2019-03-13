@@ -1,6 +1,6 @@
 package carcraft;
 
-public class PaintColor extends CarOptions() {
+public class PaintColor extends CarOptions {
 	
 	protected CarOptions car;
 	public String color;
